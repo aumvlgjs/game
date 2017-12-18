@@ -1,0 +1,1 @@
+{"__type__":"cc.AnimationClip","_name":"GameItem","_duration":0.3333333333333333,"wrapMode":22,"curveData":{"paths":{"ImgIconGame":{"props":{"scaleX":[{"frame":0,"value":1,"curve":"quadInOut"},{"frame":0.3333333333333333,"value":1.1}],"scaleY":[{"frame":0,"value":1,"curve":"quadInOut"},{"frame":0.3333333333333333,"value":1.1}]}}}}}

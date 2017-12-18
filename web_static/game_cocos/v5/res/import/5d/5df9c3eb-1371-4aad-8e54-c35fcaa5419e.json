@@ -1,0 +1,1 @@
+[{"__type__":"cc.SpriteFrame","content":{"name":"BtnExitMiniGame","texture":"7f665f52-26bf-48d6-8c06-260ea3f707ab","rect":[1178,1036,52,52],"offset":[0,0],"originalSize":[52,52]}},{"__type__":"cc.SpriteFrame","content":{"name":"BgOTien","texture":"7f665f52-26bf-48d6-8c06-260ea3f707ab","rect":[695,951,220,64],"offset":[0,0],"originalSize":[220,64]}}]

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Vua Bài Club - game bài đổi thưởng - đánh bài đổi thưởng - game bai doi thuong - danh bai doi thuong</title>
+  <meta name="description" content="game bài đổi thưởng, game bai doi thuong, đánh bài đổi thưởng, danh bai doi thuong, Mậu Binh (mau binh), Phỏm (phom, Tá lả, ta la), Tiến lên miền nam (tlmn, tien len mien nam, tien len online, tien len), Liêng (lieng), Sâm lốc (sâm, sâm lốc, sam loc), Xì tố (xi to), Poker,  Ba cây (bai cao, cao rua), Xóc đĩa (xoc dia, xoc dia doi thuong), Bầu tôm cua cá (Bau tom cua ca doi thuong), Roulette , Săn thưởng (San thuong) - Nuôi gà, Tài xỉu (tai xiu), Vòng quay may mắn (vong quay may man), Dự đoán xổ số (xo so), Mini Poker">
+  <meta name="keywords" content="game bài đổi thưởng, game bai doi thuong, đánh bài đổi thưởng, danh bai doi thuong, Mậu Binh, mau binh, Phỏm ,phom, Tá lả, ta la, Tiến lên miền nam , tlmn, tien len mien nam, tien len online, tien len, Liêng , lieng, Sâm lốc, sâm, sâm lốc, sam loc, Xì tố, xi to, Poker,  Ba cây, bai cao, cao rua, Xóc đĩa, xoc dia, xoc dia doi thuong, Bầu tôm cua cá, Bau tom cua ca doi thuong, Roulette , Săn thưởng, San thuong, Nuôi gà, Tài xỉu, tai xiu, Vòng quay may mắn, vong quay may man, Dự đoán xổ số, xo so, Mini Poker">
+
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="full-screen" content="yes"/>
+  <meta name="screen-orientation" content="portrait"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <link rel="stylesheet" type="text/css" href="style-desktop.css"/>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '608691699281255');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1"
+  src="https://www.facebook.com/tr?id=608691699281255&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <style>
+  #GameDiv {
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  #splash {
+    background: url(https://iplayvn.net/static/login/vuabai/bg.png) repeat;
+    background-size: initial;
+  }
+  @keyframes spin {
+    100% {
+      webkit-transform: rotate(360deg);
+      transform:rotate(360deg);
+    }
+  }
+  body {
+    background-color: black;
+  }
+  #support-wrapper{
+    position: absolute;
+    height: 0px;
+    left: -20px;
+    top: 90px;
+    z-index: 100;
+	}
+	.support-box {
+		width: 72px;
+		position: absolute;
+		right: 0;
+		z-index: 20;
+	}
+	.support-box  input{
+		width:72px;
+		height:63px;
+		border:none;
+	}
+	.chat{
+		background: url('hotro.png') no-repeat;
+	}
+	.mobile{
+		background: url('mobile.png') no-repeat;
+	}
+	.sukien {
+		background: url('sukien.png') no-repeat;
+	}
+	.android{
+		background: url('android.png') no-repeat;
+		opacity: 0.9;
+	}
+	.ios{
+		background: url('ios.png') no-repeat;
+		opacity: 0.9;
+	}
+	.winphone{
+		background: url('winphone.png') no-repeat;
+		opacity: 0.9;
+	}
+  </style>
+</head>
+<body>
+
+<div id="GameDiv"  style="width:1068px; height: 600px;">
+  <canvas id="GameCanvas" width="1068" height="600"></canvas>
+  <div id="splash">
+    <div class="logo-login" style="background: url('https://iplayvn.net/static/login/vuabai/logo.png') no-repeat center; background-size: contain; height: 240px; height: 240px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; z-index: 100;"></div>
+    <div class="logo-animation" style="background: url(https://iplayvn.net/static/login/vuabai/animation.png) no-repeat center; background-size: contain; height: 400px; animation: spin 4s linear infinite; width: 400px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;"></div>
+    <div class="progress-bar stripes">
+      <span style="width: 0%"></span>
+    </div>
+  </div>
+  <!-- <div class="doBong" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0));"></div>
+  <div class="doBong" style="position: absolute; right: 0px; top: 0px; width: 85px; height: 100%; background: linear-gradient(to left, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0));"></div> -->
+  <div id="support-wrapper">
+		<div class="support-box">
+			<a href="https://www.facebook.com/vuadoithuong/" target="_blank"><input type="button" class="chat" value=""></a>
+			<a href="http://vuabai.club/tin-tuc-su-kien-ca11.html" target="_blank"><input type="button" class="sukien" value=""></a>
+			<a href="https://cdn.rawgit.com/gameip/bgdtip/master/pro/vb/apk/vuabai.apk"><input type="button" class="android" value=" "></a>
+			<a href="https://goo.gl/GSKOBL" target="_blank"><input type="button" class="ios" value=" "></a>
+			<!-- <a href="http://windowsphone.com/s?appid=282b91af-7635-4870-9c3b-9fff2bcc97ee" target="_blank"><input type="button" class="winphone" value=" "></a> -->
+		</div>
+  </div>
+</div>
+
+<script src="src/settings.js?_=1492161474" charset="utf-8"></script>
+<script src="main.js?_=1492161474" charset="utf-8"></script>
+<script>
+  var elements = document.getElementsByClassName('doBong'),
+      canvas = document.getElementById('GameCanvas');
+  function handle(event) {
+    var new_event = new MouseEvent(event.type, event);
+    canvas.dispatchEvent(new_event);
+  }
+  for (var i = 0; i < elements.length; i += 1) {
+    elements[i].addEventListener('mouseup', handle);
+    elements[i].addEventListener('mousedown', handle);
+    elements[i].addEventListener('mousemove', handle);
+    elements[i].addEventListener('touchstart', handle);
+    elements[i].addEventListener('touchmove', handle);
+    elements[i].addEventListener('touchend', handle);
+  }
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-64957673-4', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>fbq('track', 'Search');</script>
+
+</body>
+</html>

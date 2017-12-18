@@ -1,0 +1,199 @@
+body {
+	background-color: black;
+}
+
+.game-container {
+	background: url(bg.png) repeat;
+    background-size: cover;
+    height: 600px;
+	width: 1060px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.game-container.register {
+	background: url(reg_bg.png);
+}
+
+@media screen and (max-device-width: 1060px) {
+	.game-container.register {
+		width: 100%;
+	}
+}
+
+.login-top {
+	background: url(bg_menu_top.png) repeat;
+	background-size: cover;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+
+.login-top > * {
+	vertical-align: middle;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.logo-login {
+	background: url(logo.png) no-repeat center;
+	background-size: contain;
+	height: 240px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 100;
+}
+
+@keyframes spin {
+	100% {
+		webkit-transform: rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+.logo-animation {
+	background: url(animation.png) no-repeat center;
+	background-size: contain;
+	height: 400px;
+	animation:spin 4s linear infinite;
+	width: 400px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.refresh-captcha {
+	color: #5bc0de !important;
+}
+bh-captcha > img {
+	height: 46px;
+}
+
+.login-top bh-captcha img {
+	height: 30px;
+}
+
+.forgot_password_trigger {
+	cursor: pointer;
+}
+
+.form-control {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: none;
+	border: 1px solid #89011a;
+}
+
+
+.game-list-container {
+	/*height: 500px;*/
+	width: 96%;
+	/*overflow: hidden;*/
+	/*position: relative;*/
+	margin: 30px 20px;
+	cursor: pointer;
+}
+.game-list {
+	/*position: absolute;*/
+	/*top: 0px;*/
+	/*bottom: -15px;*/
+	/*left: 0px;*/
+	width: 100%;
+	overflow: hidden;
+}
+.game-row {
+	width: 10000px;
+}
+
+.game-list-container * ::-moz-selection { /* Code for Firefox */
+    background: rgba(0, 0, 0, 0);
+}
+.game-list-container * ::selection {
+    background: rgba(0, 0, 0, 0);
+}
+
+.game-item {
+	background: url(game_btn.png) no-repeat;
+	background-size: contain;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 20px;
+}
+.game-item:hover {
+	background: url(game_btn_hover.png) no-repeat;
+	background-size: contain;
+}
+.game-item > img {
+	height: 200px;
+	width: 200px;
+}
+.game-item > span {
+	position: relative;
+    bottom: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+#support-wrapper{
+    position: absolute;
+    height: 0px;
+    left: -10px;
+    top: 90px;
+    z-index: 100;
+}
+.support-box {
+    width: 72px;
+    position: absolute;
+    right: 0;
+    z-index: 20;
+}
+.support-box  input{
+	width:72px;
+	height:63px;
+	border:none;
+}
+.chat{
+	background: url('hotro.png') no-repeat;
+}
+.mobile{
+	background: url('mobile.png') no-repeat;
+}
+.sukien {
+	background: url('sukien.png') no-repeat;
+}
+.android{
+	background: url('android.png') no-repeat;
+	opacity: 0.9;
+}
+.ios{
+	background: url('ios.png') no-repeat;
+	opacity: 0.9;
+}
+.winphone{
+	background: url('winphone.png') no-repeat;
+	opacity: 0.9;
+}
+.slide-down{
+	color: #fff;
+    background-color: #000000;
+    display:none;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+.slide-down input:hover{
+	opacity: 1;
+}

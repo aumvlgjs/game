@@ -1,0 +1,71 @@
+body {
+	background: url(bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.register-form {
+	padding-top: 180px;
+	margin: auto;
+    width: 1px;
+}
+
+.register-form .title {
+	margin-left: -560px;
+}
+
+.register-form form {
+	background-image: url(bgform.png);
+	width: 370px;
+	height: 475px;
+	margin-left: -360px;
+}
+
+.register-form form div {
+	padding-top: 12px;
+	text-align: center;
+	position: relative;
+}
+
+.register-form form div .addon {
+	position: absolute;
+	bottom: 10px;
+	left: 40px;
+}
+
+.register-form input[type="text"], input[type="password"] {
+	background: transparent url(input.png);
+	width: 322px;
+	height: 56px;
+	border: none;
+	padding-left: 50px;
+	font-size: 18px;
+}
+
+.register-form input.small {
+	background: transparent url(smallinput.png);
+	width: 132px;
+	height: 56px;
+	padding-left: 15px;
+}
+
+.register-form bh-captcha img {
+	height: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+	.register-form {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.register-form {
+		padding-top: 0px;
+	}
+	.register-form form {
+		margin-left: -180px;
+	}
+}

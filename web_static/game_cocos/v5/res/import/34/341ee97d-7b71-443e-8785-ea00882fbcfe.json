@@ -1,0 +1,1 @@
+{"__type__":"cc.AnimationClip","_name":"LightMove","_duration":3.5,"wrapMode":2,"curveData":{"props":{"position":[{"frame":1,"value":[-80,0]},{"frame":1.9833333333333334,"value":[80,0]},{"frame":3.5,"value":[80,0]}]}}}

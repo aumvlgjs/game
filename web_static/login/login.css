@@ -1,0 +1,32 @@
+body {
+	background: url(bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.logo-login {
+	background: url(logo.png) no-repeat center;
+	background-size: contain;
+	height: 20vw;
+}
+
+.refresh-captcha {
+	color: #5bc0de !important;
+}
+
+.forgot_password_trigger {
+	cursor: pointer;
+}
+
+.register-form {
+	margin-top: 5em;
+}
+
+.form-control {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: none;
+	border: 1px solid #003eb7;
+}
